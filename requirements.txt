@@ -1,0 +1,19 @@
+# Laptop / inference environment (Day 1, 2, 4, 5). Training uses requirements_training.txt on the GPU machine.
+torch
+transformers>=4.40
+datasets
+sentence-transformers
+scikit-learn
+pandas
+numpy
+matplotlib
+requests
+tqdm
+spacy
+pdfplumber
+PyMuPDF
+rouge_score
+gradio
+jupyter
+ipykernel
+# after installing: python -m spacy download en_core_web_sm

@@ -1,0 +1,21 @@
+category,threshold,support,precision,recall,f1
+Effective Date,0.15,215,0.304,0.447,0.362
+Document Name,0.5,258,0.629,0.519,0.569
+Post-Termination Services,0.45,58,0.278,0.638,0.387
+Rofr/Rofo/Rofn,0.5,42,0.397,0.643,0.491
+Non-Transferable License,0.5,70,0.522,0.671,0.588
+Exclusivity,0.5,54,0.342,0.722,0.464
+Revenue/Profit Sharing,0.35,65,0.467,0.754,0.576
+License Grant,0.45,125,0.608,0.768,0.678
+Cap On Liability,0.2,112,0.624,0.786,0.696
+Agreement Date,0.15,198,0.492,0.788,0.606
+Non-Compete,0.5,29,0.333,0.793,0.469
+Minimum Commitment,0.35,49,0.39,0.796,0.523
+Ip Ownership Assignment,0.35,36,0.38,0.833,0.522
+Audit Rights,0.5,117,0.588,0.855,0.697
+Anti-Assignment,0.5,98,0.642,0.878,0.741
+Expiration Date,0.5,70,0.747,0.886,0.81
+Insurance,0.4,104,0.679,0.894,0.772
+Termination For Convenience,0.3,35,0.508,0.943,0.66
+Parties,0.05,7071,0.77,0.957,0.854
+Governing Law,0.3,64,0.901,1.0,0.948

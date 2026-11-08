@@ -1,0 +1,451 @@
+{
+ "synthetic_mutual_nda.pdf": [
+  {
+   "text": "This Mutual Non-Disclosure Agreement (the \"Agreement\") is entered into as of March 3, 2025 (the \"Effective Date\") by and between Northwind Analytics Ltd., a company incorporated in England (\"Northwind\"), and Harbor Robotics Inc., a Delaware corporation (\"Harbor\").",
+   "expected": [
+    "Parties",
+    "Agreement Date",
+    "Effective Date"
+   ],
+   "benign": false,
+   "note": "preamble: parties and dates"
+  },
+  {
+   "text": "The Receiving Party shall hold all Confidential Information in strict confidence and shall not disclose it to any third party for a period of five (5) years following the termination of this Agreement.",
+   "expected": [
+    "Confidentiality"
+   ],
+   "benign": false,
+   "note": "confidentiality survives 5 years"
+  },
+  {
+   "text": "Pursuant to Sec. 2.1, the Receiving Party may share Confidential Information with its advisers who need to know it for the Purpose, subject to prior approval. Each such adviser must be bound by written obligations at least as protective as these.",
+   "expected": [
+    "Confidentiality"
+   ],
+   "benign": false,
+   "note": "splitter test: \"Sec.\" and \"approval.\" must not merge sentences"
+  },
+  {
+   "text": "During the term of this Agreement and for twelve (12) months thereafter, neither party shall, directly or indirectly, solicit for employment or hire any employee of the other party with whom it had contact in connection with the Purpose.",
+   "expected": [
+    "No-Solicit Of Employees"
+   ],
+   "benign": false,
+   "note": "no-solicit of employees (rules only; no model head)"
+  },
+  {
+   "text": "For a period of two (2) years after the Effective Date, Harbor shall not engage in, or assist any third party in, the development of any analytics platform that is substantially similar to the Northwind platform.",
+   "expected": [
+    "Non-Compete"
+   ],
+   "benign": false,
+   "note": "non-compete, paraphrased (no \"compete\" keyword)"
+  },
+  {
+   "text": "In the event of any unauthorised disclosure, the breaching party shall pay the disclosing party the sum of USD 250,000, which the parties agree is a genuine pre-estimate of loss and not a penalty.",
+   "expected": [
+    "Liquidated Damages"
+   ],
+   "benign": false,
+   "note": "liquidated damages, paraphrased (no \"liquidated damages\" phrase)"
+  },
+  {
+   "text": "The Receiving Party shall indemnify and hold harmless the Disclosing Party against all losses arising from any breach of this Agreement.",
+   "expected": [
+    "Indemnification"
+   ],
+   "benign": false,
+   "note": "indemnity"
+  },
+  {
+   "text": "All feedback, suggestions and improvements relating to the Disclosing Party's technology shall vest exclusively in the Disclosing Party, and the Receiving Party hereby assigns all right, title and interest therein.",
+   "expected": [
+    "Ip Ownership Assignment"
+   ],
+   "benign": false,
+   "note": "IP assignment of feedback"
+  },
+  {
+   "text": "This Agreement shall remain in force for three (3) years from the Effective Date.",
+   "expected": [
+    "Expiration Date"
+   ],
+   "benign": false,
+   "note": "term"
+  },
+  {
+   "text": "Northwind may terminate this Agreement at any time, for any reason, upon ten (10) days written notice to Harbor.",
+   "expected": [
+    "Termination For Convenience"
+   ],
+   "benign": false,
+   "note": "one-sided termination for convenience"
+  },
+  {
+   "text": "Neither party may assign this Agreement without the prior written consent of the other party.",
+   "expected": [
+    "Anti-Assignment"
+   ],
+   "benign": false,
+   "note": "anti-assignment"
+  },
+  {
+   "text": "Upon a change of control of Harbor, Northwind may terminate this Agreement immediately by written notice.",
+   "expected": [
+    "Change Of Control"
+   ],
+   "benign": false,
+   "note": "change of control (rules only; no model head)"
+  },
+  {
+   "text": "This Agreement shall be governed by and construed in accordance with the laws of England and Wales.",
+   "expected": [
+    "Governing Law"
+   ],
+   "benign": false,
+   "note": "governing law"
+  },
+  {
+   "text": "All notices under this Agreement shall be sent to the addresses set out above.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: notices"
+  },
+  {
+   "text": "This Agreement may be executed in counterparts, each of which shall be deemed an original.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: counterparts"
+  }
+ ],
+ "synthetic_residential_lease.pdf": [
+  {
+   "text": "This Residential Lease Agreement (the \"Lease\") is made on June 1, 2025 between Maple Street Properties LLC (\"Landlord\") and Jordan Rivera (\"Tenant\") for the premises at 42 Elm Avenue, Apartment 3B, Springfield (the \"Premises\").",
+   "expected": [
+    "Parties",
+    "Agreement Date",
+    "Effective Date"
+   ],
+   "benign": false,
+   "note": "preamble: parties and date"
+  },
+  {
+   "text": "The lease term begins on July 1, 2025 and ends on June 30, 2026.",
+   "expected": [
+    "Expiration Date",
+    "Effective Date"
+   ],
+   "benign": false,
+   "note": "term dates"
+  },
+  {
+   "text": "Thereafter, this Lease shall automatically renew for successive twelve-month terms unless Tenant delivers written notice of non-renewal at least sixty (60) days before the end of the then-current term.",
+   "expected": [
+    "Renewal Term",
+    "Notice Period To Terminate Renewal"
+   ],
+   "benign": false,
+   "note": "auto-renewal with notice window (rules only)"
+  },
+  {
+   "text": "Tenant shall pay monthly rent of $1,850 on the first day of each month by bank transfer.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: rent"
+  },
+  {
+   "text": "Landlord may raise the rent at any time during the term upon thirty (30) days notice to Tenant.",
+   "expected": [
+    "Unilateral Modification",
+    "Price Restrictions"
+   ],
+   "benign": false,
+   "note": "unilateral rent increase, paraphrased (hard case)"
+  },
+  {
+   "text": "Tenant forfeits the entire security deposit if Tenant ends this Lease before the end of the term, and the parties agree this amount constitutes liquidated damages and not a penalty.",
+   "expected": [
+    "Liquidated Damages"
+   ],
+   "benign": false,
+   "note": "deposit forfeiture"
+  },
+  {
+   "text": "Landlord may terminate this Lease without cause by giving Tenant thirty (30) days written notice.",
+   "expected": [
+    "Termination For Convenience"
+   ],
+   "benign": false,
+   "note": "landlord termination without cause"
+  },
+  {
+   "text": "Tenant may end this Lease early only by paying an early termination fee equal to two months' rent.",
+   "expected": [
+    "Liquidated Damages"
+   ],
+   "benign": false,
+   "note": "early termination fee"
+  },
+  {
+   "text": "Tenant shall maintain renter's insurance with liability coverage of at least $100,000 and shall name Landlord as an additional insured.",
+   "expected": [
+    "Insurance"
+   ],
+   "benign": false,
+   "note": "insurance requirement"
+  },
+  {
+   "text": "Landlord shall not be responsible for any damage to Tenant's property or injury to any person on the Premises, however caused, including by Landlord's own negligence.",
+   "expected": [
+    "Cap On Liability",
+    "Limitation of Liability"
+   ],
+   "benign": false,
+   "note": "exculpatory clause, paraphrased (hard case)"
+  },
+  {
+   "text": "Tenant shall indemnify and hold Landlord harmless from all claims arising from Tenant's use of the Premises.",
+   "expected": [
+    "Indemnification"
+   ],
+   "benign": false,
+   "note": "indemnity"
+  },
+  {
+   "text": "Nothing in this Lease shall limit or exclude Tenant's liability for damage to the Premises.",
+   "expected": [
+    "Uncapped Liability"
+   ],
+   "benign": false,
+   "note": "uncapped tenant liability"
+  },
+  {
+   "text": "Tenant shall keep the Premises clean, sanitary and in good condition.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: upkeep"
+  },
+  {
+   "text": "Smoking is not permitted anywhere inside the Premises.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: smoking"
+  },
+  {
+   "text": "Landlord reserves the right to change the building rules at any time without notice to Tenant.",
+   "expected": [
+    "Unilateral Modification"
+   ],
+   "benign": false,
+   "note": "unilateral rule changes"
+  },
+  {
+   "text": "Tenant shall not sublet the Premises or assign this Lease without Landlord's prior written consent.",
+   "expected": [
+    "Anti-Assignment"
+   ],
+   "benign": false,
+   "note": "no subletting / assignment"
+  },
+  {
+   "text": "Any dispute arising under this Lease shall be resolved by binding arbitration, and Tenant waives any right to a jury trial.",
+   "expected": [
+    "Arbitration or Jury Waiver"
+   ],
+   "benign": false,
+   "note": "arbitration + jury waiver"
+  },
+  {
+   "text": "Tenant agrees not to post negative reviews or disparaging comments about Landlord or the Premises on any website.",
+   "expected": [
+    "Non-Disparagement"
+   ],
+   "benign": false,
+   "note": "non-disparagement (rules only)"
+  },
+  {
+   "text": "This Lease shall be governed by the laws of the State of Illinois.",
+   "expected": [
+    "Governing Law"
+   ],
+   "benign": false,
+   "note": "governing law"
+  }
+ ],
+ "synthetic_saas_terms.pdf": [
+  {
+   "text": "These Terms of Service (the \"Terms\") form a binding agreement between CloudLedger Inc. (\"CloudLedger\") and the business customer that accepts them (\"Customer\"), effective as of the date Customer first accesses the Service.",
+   "expected": [
+    "Parties",
+    "Document Name",
+    "Effective Date"
+   ],
+   "benign": false,
+   "note": "preamble: parties"
+  },
+  {
+   "text": "CloudLedger may modify these Terms at any time by posting the revised Terms on its website, and Customer's continued use of the Service constitutes acceptance of the revised Terms.",
+   "expected": [
+    "Unilateral Modification"
+   ],
+   "benign": false,
+   "note": "unilateral modification"
+  },
+  {
+   "text": "Each subscription renews for another billing period at CloudLedger's then-current rates unless Customer cancels before the renewal date.",
+   "expected": [
+    "Renewal Term"
+   ],
+   "benign": false,
+   "note": "auto-renewal, paraphrased (no \"automatically\")"
+  },
+  {
+   "text": "Customer commits to a minimum annual spend of $25,000 regardless of actual usage.",
+   "expected": [
+    "Minimum Commitment"
+   ],
+   "benign": false,
+   "note": "minimum commitment (model only)"
+  },
+  {
+   "text": "CloudLedger may increase subscription fees once per year by no more than seven percent (7%).",
+   "expected": [
+    "Price Restrictions"
+   ],
+   "benign": false,
+   "note": "price increase cap"
+  },
+  {
+   "text": "CloudLedger will not charge Customer a higher price for the Service than it charges any other customer with a comparable subscription.",
+   "expected": [
+    "Most Favored Nation"
+   ],
+   "benign": false,
+   "note": "most-favoured-customer pricing, paraphrased"
+  },
+  {
+   "text": "All fees are payable in US dollars within thirty (30) days of invoice.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: payment terms"
+  },
+  {
+   "text": "CloudLedger may suspend or terminate Customer's account at any time, with or without cause, and without prior notice.",
+   "expected": [
+    "Termination For Convenience"
+   ],
+   "benign": false,
+   "note": "termination without cause"
+  },
+  {
+   "text": "Upon termination, CloudLedger will retain Customer data for thirty (30) days, after which it will be permanently deleted.",
+   "expected": [
+    "Post-Termination Services"
+   ],
+   "benign": false,
+   "note": "post-termination data retention (model only)"
+  },
+  {
+   "text": "Customer grants CloudLedger a perpetual, irrevocable, worldwide, royalty-free license to use any feedback or data Customer submits to improve CloudLedger's services.",
+   "expected": [
+    "Irrevocable Or Perpetual License",
+    "License Grant"
+   ],
+   "benign": false,
+   "note": "perpetual licence to customer data"
+  },
+  {
+   "text": "IN NO EVENT SHALL CLOUDLEDGER'S AGGREGATE LIABILITY EXCEED THE FEES PAID BY CUSTOMER IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.",
+   "expected": [
+    "Cap On Liability"
+   ],
+   "benign": false,
+   "note": "liability cap"
+  },
+  {
+   "text": "CLOUDLEDGER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES.",
+   "expected": [
+    "Cap On Liability"
+   ],
+   "benign": false,
+   "note": "consequential damages exclusion"
+  },
+  {
+   "text": "The foregoing limitations shall not apply to Customer's payment obligations or to Customer's indemnification obligations.",
+   "expected": [
+    "Uncapped Liability"
+   ],
+   "benign": false,
+   "note": "carve-out: customer liability uncapped"
+  },
+  {
+   "text": "Customer shall defend, indemnify and hold harmless CloudLedger from any claims arising out of Customer's use of the Service.",
+   "expected": [
+    "Indemnification"
+   ],
+   "benign": false,
+   "note": "indemnity"
+  },
+  {
+   "text": "CloudLedger may audit Customer's use of the Service, including Customer's books and records relating to user counts, upon ten (10) days notice.",
+   "expected": [
+    "Audit Rights"
+   ],
+   "benign": false,
+   "note": "audit rights"
+  },
+  {
+   "text": "Customer may not assign these Terms without CloudLedger's prior written consent.",
+   "expected": [
+    "Anti-Assignment"
+   ],
+   "benign": false,
+   "note": "anti-assignment"
+  },
+  {
+   "text": "CloudLedger may assign these Terms without restriction, including in connection with a merger, acquisition or sale of all or substantially all of its assets.",
+   "expected": [
+    "Change Of Control"
+   ],
+   "benign": false,
+   "note": "change of control / free assignment"
+  },
+  {
+   "text": "During the subscription term and for one year thereafter, Customer shall not solicit any employee of CloudLedger to leave CloudLedger's employment.",
+   "expected": [
+    "No-Solicit Of Employees"
+   ],
+   "benign": false,
+   "note": "no-solicit of employees"
+  },
+  {
+   "text": "Any dispute shall be resolved by binding arbitration administered by the American Arbitration Association, and Customer waives any right to participate in a class action.",
+   "expected": [
+    "Arbitration or Jury Waiver"
+   ],
+   "benign": false,
+   "note": "arbitration + class action waiver"
+  },
+  {
+   "text": "These Terms are governed by the laws of the State of California.",
+   "expected": [
+    "Governing Law"
+   ],
+   "benign": false,
+   "note": "governing law"
+  },
+  {
+   "text": "CloudLedger provides customer support by email during normal business hours.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: support"
+  },
+  {
+   "text": "The Service is hosted in data centres located in the United States.",
+   "expected": [],
+   "benign": true,
+   "note": "benign: hosting"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+# --- Large files (GitHub rejects files over 100 MB) ---
+# Trained Legal-BERT weights (438 MB). Config, tokenizer and clf_meta.json are kept.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+*.zip
+
+# Data: CUAD is downloaded by the notebook; the rest are caches it rebuilds
+legal_doc_summariser/data/*.json
+!legal_doc_summariser/data/split_contract_ids.json
+legal_doc_summariser/data/*.pkl
+legal_doc_summariser/data/*.npz
+*.log
+
+# --- Clutter ---
+backups/
+Legal_Summariser_All_Days.html
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*_env/
+.DS_Store
+.claude/

@@ -1,0 +1,13 @@
+CUAD category,gold,recall rules,recall Legal-BERT,recall ensemble
+Anti-Assignment,98,0.031,0.878,0.878
+Audit Rights,117,0.12,0.855,0.855
+Cap On Liability,112,0.134,0.786,0.795
+Exclusivity,54,0.204,0.722,0.741
+Insurance,104,0.144,0.894,0.894
+Ip Ownership Assignment,36,0.111,0.833,0.833
+Liquidated Damages,9,0.111,0.0,0.111
+Most Favored Nation,6,0.0,0.0,0.0
+Non-Compete,29,0.0,0.793,0.793
+Renewal Term,23,0.304,0.0,0.304
+Termination For Convenience,35,0.114,0.943,0.943
+Uncapped Liability,32,0.0,0.0,0.0
